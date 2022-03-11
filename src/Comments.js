@@ -21,6 +21,7 @@ function Comments(props) {
     const id = uniqid();
     dispatch(commentCreate(textComment, id));
   };
+
   return (
     <div className="card-comments">
       <form onSubmit={handleSubmit} className="comments-item-create">
