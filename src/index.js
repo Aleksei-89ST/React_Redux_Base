@@ -6,11 +6,12 @@ import { applyMiddleware, compose, createStore } from "redux";
 import { rootReducer } from "./redux/rootReducer";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
+import { spamFilter } from "./redux/middleware";
 
 const store = createStore(
   rootReducer,
   compose(
-    applyMiddleware(thunk),
+    applyMiddleware(thunk,spamFilter),
   )
 );
 

@@ -78,7 +78,7 @@ export function commentsLoad() {
     try {
       dispatch(loaderOn());
       const response = await fetch(
-        "htt://jsonplaceholder.typicode.com/comments?_limit=10"
+        "https://jsonplaceholder.typicode.com/comments?_limit=10"
       );
       const jsonData = await response.json();
 
