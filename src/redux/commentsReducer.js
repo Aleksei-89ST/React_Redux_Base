@@ -3,7 +3,7 @@ const initialState = {
   comments: [],
 };
 export const commentsReducer = (state = initialState, action) => {
-  console.log("commentsReducer >>>", action);
+  console.log("comments Reducer >>>", action);
   switch (action.type) {
     case COMMENT_CREATE:
       return {
